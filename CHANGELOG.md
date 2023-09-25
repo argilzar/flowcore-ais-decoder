@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.0 (2023-09-25)
+
+
+### Features
+
+* 1st working version ([51e6173](https://github.com/argilzar/flowcore-ais-decoder/commit/51e6173a86711addd2a35a4b69e7d074b59c4736))
+
+
+### Bug Fixes
+
+* fix yarn version issue ([5a2f8f6](https://github.com/argilzar/flowcore-ais-decoder/commit/5a2f8f635be95f2cff3a9b863ce950d366c517fc))
+
 ## [1.3.0](https://github.com/flowcore-io/nodejs-typescript-transformer-example/compare/v1.2.0...v1.3.0) (2023-09-12)
 
 
