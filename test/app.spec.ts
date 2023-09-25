@@ -17,7 +17,7 @@ dayjs.extend(utc);
 
 const TRANSFORMER_BLUEPRINT: TransformerBlueprint = {
   name: "test-transformer",
-  version: "1.0.0",
+  version: "1.0.2",
   runtime: "node",
   artifactUrl: "/app/transformers/test-transformer",
   entrypoint: "main.js",
@@ -79,15 +79,10 @@ describe("NodeJS Test Transformer (e2e)", () => {
 
     const expected = JSON.parse(fs.readFileSync(path.join(__dirname, "expected.json"), "utf-8")) as { input: any, output: any }[];
 
-    const definition = {
-      hello: "world",
-    };
-
     for (const expectedConfiguration of expected) {
       const eventTime = dayjs.utc(faker.date.recent());
       const data: TransformData = {
         destination: `http://${process.env.HOST_ADDRESS}:${receiverPort}/store/${receiverName}`,
-        definition,
         event: {
           eventId: faker.string.uuid(),
           dataCore: faker.string.uuid(),
@@ -122,8 +117,15 @@ describe("NodeJS Test Transformer (e2e)", () => {
           data[key] = expect.any(String);
           continue;
         }
+        if (key === "ais-decoded") {
+          data[key] = expectedConfiguration.output[key];
+          data[key]["utc"] = expect.any(Number);
+          continue;
+        }
         data[key] = expectedConfiguration.output[key];
       }
+
+
 
       expect(jestFn.mock.calls).toEqual(expect.arrayContaining([[expect.objectContaining({
         value: data,
