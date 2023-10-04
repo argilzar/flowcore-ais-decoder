@@ -22,11 +22,9 @@ export default async function (input: Input) {
   const payloadData = input.payload.data || "";
   //Base64 decode the payload
   const decodedPayload = Buffer.from(payloadData, "base64").toString("utf-8");
-  console.log(decodedPayload);
   const safeMode = false;
   const aisDecoder_ex2 = new Decoder([decodedPayload], safeMode);
   const results = aisDecoder_ex2.getResults();
-  console.log(results);
 
   return {
     ais: decodedPayload,
