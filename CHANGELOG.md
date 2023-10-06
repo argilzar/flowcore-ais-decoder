@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.1.0](https://github.com/argilzar/flowcore-ais-decoder/compare/v1.0.0...v1.1.0) (2023-10-06)
+
+
+### Features
+
+* flatten the datastructure ([e73602b](https://github.com/argilzar/flowcore-ais-decoder/commit/e73602be200e1a9088dcb2ebe52e835275cbdf74))
+* remove excessive logging ([63ccb1e](https://github.com/argilzar/flowcore-ais-decoder/commit/63ccb1e145603e7b0feb2d844e4ea4506c0a4edd))
+
+
+### Bug Fixes
+
+* test ([65c0e81](https://github.com/argilzar/flowcore-ais-decoder/commit/65c0e816216bacee33e1033f70eac40ef9f1f0ca))
+* test 2 ([3b8b536](https://github.com/argilzar/flowcore-ais-decoder/commit/3b8b5363c758009105da2b307254289b9a8767cb))
+* test 3 ([67278cb](https://github.com/argilzar/flowcore-ais-decoder/commit/67278cb7544922c8f935dd6268a30cf872e2506c))
+* test 4 ([f49b46c](https://github.com/argilzar/flowcore-ais-decoder/commit/f49b46c98e2b67596eb315a9b9596eb823306d0d))
+
 ## 1.0.0 (2023-09-25)
 
 
