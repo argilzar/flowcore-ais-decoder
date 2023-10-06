@@ -18,7 +18,7 @@ interface Input<T = any> {
 }
 
 export default async function (input: Input) {
-  console.info(`Received event ${input.eventId}, with payload ${JSON.stringify(input.payload)} and valid time ${input.validTime}`);
+  console.debug(`Received event ${input.eventId}, with payload ${JSON.stringify(input.payload)} and valid time ${input.validTime}`);
   const payloadData = input.payload.data || "";
   //Base64 decode the payload
   const decodedPayload = Buffer.from(payloadData, "base64").toString("utf-8");
@@ -27,10 +27,7 @@ export default async function (input: Input) {
   const results = aisDecoder_ex2.getResults();
 
   return {
+    ...results.shift(),
     ais: decodedPayload,
-    "ais-decoded": results.shift(),
-    eventId: input.eventId,
-    validTime: input.validTime
-
   };
 }
