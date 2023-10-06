@@ -29,5 +29,7 @@ export default async function (input: Input) {
   return {
     ...results.shift(),
     ais: decodedPayload,
+    eventId: input.eventId,
+    validTime: input.validTime,
   };
 }
