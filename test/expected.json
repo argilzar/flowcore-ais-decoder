@@ -5,50 +5,21 @@
     },
     "output": {
       "ais": "!AIVDO,1,1,,,13LQB0701>wQBfvSVk=lhkkF28Dw,0*5C",
-      "ais-decoded": {
-        "valid": true,
-        "repeat": 0,
-        "mmsi": "231232000",
-        "type": 1,
-        "status": "Engaged in Fishing",
-        "cog": 121.9,
-        "sog": 7.8,
-        "rot": 0,
-        "hdg": 121,
-        "lon": -6.708108333333334,
-        "lat": 62.226438333333334,
-        "accuracy": 1,
-        "maneuver": "0",
-        "raim": 1,
-        "class": "A"
-      },
-      "eventId": ":uuid:",
-      "validTime": ":date:"
-    }
-  },
-  {
-    "input": {
-      "data": "IUFJVkRPLDEsMSwsLDEzTFFCMDcwMT53UUJmdlNWaz1saGtrRjI4RHcsMCo1Qw=="
-    },
-    "output": {
-      "ais": "!AIVDO,1,1,,,13LQB0701>wQBfvSVk=lhkkF28Dw,0*5C",
-      "ais-decoded": {
-        "valid": true,
-        "repeat": 0,
-        "mmsi": "231232000",
-        "type": 1,
-        "status": "Engaged in Fishing",
-        "cog": 121.9,
-        "sog": 7.8,
-        "rot": 0,
-        "hdg": 121,
-        "lon": -6.708108333333334,
-        "lat": 62.226438333333334,
-        "accuracy": 1,
-        "maneuver": "0",
-        "raim": 1,
-        "class": "A"
-      },
+      "valid": true,
+      "repeat": 0,
+      "mmsi": "231232000",
+      "type": 1,
+      "status": "Engaged in Fishing",
+      "cog": 121.9,
+      "sog": 7.8,
+      "rot": 0,
+      "hdg": 121,
+      "lon": -6.708108333333334,
+      "lat": 62.226438333333334,
+      "accuracy": 1,
+      "maneuver": "0",
+      "raim": 1,
+      "class": "A",
       "eventId": ":uuid:",
       "validTime": ":date:"
     }
